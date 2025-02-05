@@ -1,22 +1,15 @@
+import java.util.Objects;
+
 public class Skidka {
-    private double skidka;
-    private double procent;
-    private double price;
+    private int procent;
+    private int price;
 
-    public double getProcent() {
-        return procent;
-    }
-    public void setProcent(double procent) {
+    public Skidka (int procent, int price) {
         this.procent = procent;
-    }
-    public double getSkidka() {
-        return skidka;
-    }
-    public void setSkidka(double skidka) {
-        this.skidka = skidka;
+        this.price = price;
     }
 
-    public Skidka(double skidka, double procent, double price) {
-        skidka = price * procent / 100;
+    public int Drova (int procent, int price) {
+       return procent * price / 100;
     }
 }

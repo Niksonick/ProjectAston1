@@ -28,6 +28,8 @@ public class AirTransportation {
     User user = new User();
 
     public static void main(String[] args) {
+        Skidka skidka1 = new Skidka(10, 1000);
+        System.out.println(skidka1.Drova(14, 1199));
     }
 
 }
